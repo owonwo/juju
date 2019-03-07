@@ -1,0 +1,12 @@
+      // box-shadow: $z-depth-bottom-1;
+
+// background: radial-gradient(ellipse farthest-corner at 15px 15px, lighten($primary-color, 10%) 0%, $primary-color 50%, darken($primary-color, 10%) 95%);      background: lighten($primary-color, .72);
+$black: #333;
+$accent-color: orchid;
+$border-color: #e8e8e8;
+$background-color: orange;
+
+
+body {
+	font-family: 'Avenir', 'Helvetica Neue', 'Segoe UI', 'Tahoma', sans-serif;
+}

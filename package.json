@@ -1,0 +1,27 @@
+{
+  "name": "wigxel-ui-components",
+  "version": "1.0.0",
+  "description": "Popular UI Components for VueJS",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@storybook/vue": "^4.1.13",
+    "babel-loader": "^8.0.5",
+    "babel-preset-vue": "^2.0.2",
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "vue-loader": "^15.6.4",
+    "vue-template-compiler": "^2.6.7"
+  },
+  "dependencies": {
+    "@storybook/addon-knobs": "^4.1.13",
+    "vue": "^2.6.7"
+  }
+}
