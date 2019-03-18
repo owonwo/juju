@@ -15,7 +15,7 @@ Vue.component('hr-button', HRButton);
 
 function loadStories() {
   // You can require as many stories as you need.
-  ['buttons','accordions', 'list', 'cards', 'switches']
+  ['buttons','accordions', 'list', 'form', 'cards', 'switches', 'timelines']
   .map(component => {
   	require('../components/'+component+'/index.js')
   })

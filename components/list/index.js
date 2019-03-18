@@ -14,14 +14,14 @@ storiesOf('List Components', module)
 		template: `<div>
 			<h3>List Component</h3>
 			<div style="display:flex">
-				<section style="flex: 1;min-width: 300px">
+				<ul style="flex: 1;min-width: 300px">
 					<list-item>
-						Hello From
+						Hello Micheal
 					</list-item>
 					<list-item>
 						Prettify Hello
 					</list-item>
-				</section>
+				</ul>
 				<section style="flex: 1;min-width: 300px">
 					<list-item>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod hic enim doloribus doloremque accusantium consequatur consectetur, quia sit ad dolor aperiam, id aspernatur autem provident libero animi expedita ea error.
