@@ -37,8 +37,9 @@ export default {
   flex: 1;
   padding: 0;
   min-width: 300px;
-  display: block;
+  display: flex;
   background: white;
+  flex-direction: column;
   overflow: visible;
   border-radius: 12px;
   box-sizing: border-box;
@@ -73,6 +74,7 @@ export default {
   .card-header {
     height: 50px;
     display: flex;
+    flex: 0 0 50px;
     padding: 0 15px;
     align-items: center;
     justify-content: space-between;
@@ -91,6 +93,7 @@ export default {
 
   .card-content,
   .card-body {
+    flex: 2;
     padding: 1em;
 
     &.sm {
