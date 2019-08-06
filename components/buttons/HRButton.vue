@@ -13,7 +13,7 @@
                 </slot>
             </span>
             <span class="hrb__label">
-                <slot name="text">{{ $props.label }}</slot>
+                <slot name="text">{{ $props.text }}</slot>
             </span>
         </span>
     </button>
@@ -79,7 +79,7 @@ export default {
      * @type <Array['string', toggleIcons: {open, close}]>
      */
     props: {
-        label: { type: String, required: true },
+        text: { type: String, required: true },
         disabled: { type: [Boolean, String], default: false},
         icon: { type: String, default: 'ti ti-plus' }
     },

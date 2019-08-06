@@ -9,13 +9,6 @@ import HRButton from './HRButton.vue';
 
 storiesOf('Buttons', module)
 	.addDecorator(withKnobs)
-  .add('Special Buttons', () => `<div>
-		  	<hr-button icon="zmdi-icon" text="Reveal"/>
-		  	<hr-button icon="zmdi-icon" text="Proceed"/>
-		  	<hr-button icon="zmdi-icon" 
-		  		:disabled="disabled" 
-		  		:text="text"/>
-	  	</div>`)
   .add('Special Buttons with Knobs', () => ({
   	components: { HRButton },
   	props: {
@@ -23,10 +16,19 @@ storiesOf('Buttons', module)
   			default: boolean('Disabled', false),
   		},
   		text: {
-  			default: text('Button Text', 'Proceed'),
+  			default: text('Button Text', 'REPUBLICAN'),
   		}
   	},
   	template: `
-			<hr-button icon="zmdi zmdi-account" :disabled="$props.disabled" :text="$props.text"/>
+      <div>
+        <h1>Special Buttons</h1>
+        <h3>Hover Reveal Button</h3>
+        <hr-button icon="zmdi-icon" text="Reveal"/>
+        <hr-button icon="zmdi-icon" text="Proceed"/>
+
+        <h3>Change the props below to see effect</h3>
+			  <hr-button icon="zmdi zmdi-account" :disabled="$props.disabled" :text="$props.text"/>
+        <hr-button icon="zmdi zmdi-account" :disabled="$props.disabled" :text="$props.text"/>
+      </div>
   	`
   }))
