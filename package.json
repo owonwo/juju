@@ -1,6 +1,6 @@
 {
   "name": "@wigxel/ui-components",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "Popular UI Components for VueJS",
   "main": "index.js",
   "scripts": {
