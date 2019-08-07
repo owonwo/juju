@@ -1,7 +1,12 @@
 {
   "name": "@wigxel/ui-components",
+  "keywords": [
+    "vuejs",
+    "ui",
+    "components"
+  ],
   "version": "0.2.0",
-  "description": "Popular UI Components for VueJS",
+  "description": "Cool UI Components for VueJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"No test specified\""
