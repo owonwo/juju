@@ -1,4 +1,6 @@
-import { configure } from '@storybook/vue';
+import {
+  configure
+} from '@storybook/vue';
 
 import Vue from 'vue';
 // import Vuex from 'vuex'; // Vue plugins
@@ -15,9 +17,9 @@ Vue.component('hr-button', HRButton);
 
 function loadStories() {
   // You can require as many stories as you need.
-  ['buttons','accordions', 'list', 'form', 'cards', 'switches', 'timelines']
+  ['button', 'accordion', 'switch']
   .map(component => {
-  	require('../components/'+component+'/index.js')
+    require('../stories/' + component + '.stories.js')
   })
 }
 
