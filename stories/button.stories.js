@@ -15,6 +15,8 @@ import {
     HRButton
 } from '../components/buttons';
 
+console.log(HRButton)
+
 storiesOf('Buttons', module)
     .addDecorator(withKnobs)
     .add('Special Buttons with Knobs', () => ({
@@ -33,12 +35,12 @@ storiesOf('Buttons', module)
       <div>
         <h1>Special Buttons</h1>
         <h3>Hover Reveal Button</h3>
-        <hr-button icon="zmdi-icon" text="Reveal"/>
-        <hr-button icon="zmdi-icon" text="Proceed"/>
+        <HRButton icon="zmdi-icon" text="Reveal"/>
+        <HRButton icon="zmdi-icon" text="Proceed"/>
 
         <h3>Change the props below to see effect</h3>
-			  <hr-button icon="zmdi zmdi-account" :disabled="$props.disabled" :text="$props.text"/>
-        <hr-button icon="zmdi zmdi-account" :disabled="$props.disabled" :text="$props.text"/>
+			  <HRButton icon="zmdi zmdi-account" :disabled="$props.disabled" :text="$props.text"/>
+        <HRButton icon="zmdi zmdi-account" :disabled="$props.disabled" :text="$props.text"/>
       </div>
   	`
     }))

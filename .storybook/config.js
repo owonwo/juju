@@ -7,17 +7,13 @@ import Vue from 'vue';
 
 // Import your custom components.
 import '../components/generic.scss';
-import HRButton from '../components/buttons/HRButton.vue';
-
 // Install Vue plugins.
 // Vue.use(Vuex);
 
 // Register custom components.
-Vue.component('hr-button', HRButton);
-
 function loadStories() {
   // You can require as many stories as you need.
-  ['button', 'accordion', 'switch']
+  ['button', 'accordion', 'switch', 'card', 'list', 'form', 'timeline']
   .map(component => {
     require('../stories/' + component + '.stories.js')
   })
